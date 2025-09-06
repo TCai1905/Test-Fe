@@ -9,7 +9,8 @@ document.getElementById('userDataForm').addEventListener('submit', function(even
         hobby: formData.get('hobby')
     };
 
-    fetch('/submit-user', {
+    // Update the URL to your live Google Cloud Run URL
+    fetch('https://cbrothers-210186650685.asia-southeast1.run.app/submit-user', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
